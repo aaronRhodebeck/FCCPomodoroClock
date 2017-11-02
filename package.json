@@ -6,7 +6,7 @@
   "scripts": {
     "test": "babel-node ./spec/support/run.js",
     "build": "webpack",
-    "run": "webpack-dev-server"
+    "start": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -40,6 +40,7 @@
     "jasmine": "^2.8.0",
     "jasmine-spec-reporter": "^4.2.1",
     "react-test-renderer": "^16.0.0",
+    "svg-react-loader": "^0.4.5",
     "webpack": "^3.8.1",
     "webpack-dev-server": "^2.9.3"
   }
