@@ -7,7 +7,7 @@ const Tomato = () => (
       display: 'inline-block',
       position: 'absolute',
       top: 0,
-      left: 0,
+      left: 10,
       maxHeight: '100%',
     }}
     id="tomato"
