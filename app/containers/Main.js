@@ -123,6 +123,7 @@ export default Main;
 const AppContainer = styled.div`
   position: absolute;
   height: 80vh;
+  min-height: 430px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -132,7 +133,7 @@ const AppContainer = styled.div`
 
 const TimerContainer = styled.div`
   z-index: 1;
-  position: relative;
+  position: absolute;
   flex: 1 1 auto;
   max-width: 40vh;
   margin: 0 auto;
@@ -150,7 +151,7 @@ const ControlButton = styled.button`
 const SetLengthContainer = styled.div`
   display: flex;
   flex-direction: row;
-  postion: relative;
+  postion: absolute;
   z-index: 1;
   flex: 1 1 auto;
 `;
