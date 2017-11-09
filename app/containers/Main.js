@@ -27,19 +27,27 @@ class Main extends React.Component {
   }
 
   incrementSession() {
-    this.setState({ currentSessionLength: this.state.currentSessionLength + 1 });
+    if (this.state.currentSessionLength < 60) {
+      this.setState({ currentSessionLength: this.state.currentSessionLength + 1 });
+    }
   }
 
   decrementSession() {
-    this.setState({ currentSessionLength: this.state.currentSessionLength - 1 });
+    if (this.state.currentSessionLength > 1) {
+      this.setState({ currentSessionLength: this.state.currentSessionLength - 1 });
+    }
   }
 
   incrementBreak() {
-    this.setState({ currentBreakLength: this.state.currentBreakLength + 1 });
+    if (this.state.currentBreakLength < 60) {
+      this.setState({ currentBreakLength: this.state.currentBreakLength + 1 });
+    }
   }
 
   decrementBreak() {
-    this.setState({ currentBreakLength: this.state.currentBreakLength - 1 });
+    if (this.state.currentBreakLength > 1) {
+      this.setState({ currentBreakLength: this.state.currentBreakLength - 1 });
+    }
   }
 
   switchTimer() {
